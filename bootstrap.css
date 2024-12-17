@@ -1,0 +1,396 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #2d94f7;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff7e00;
+}
+
+/* Главная страница */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav img {
+  width: 75px;
+  height: 75px;
+  
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff7e00, #2d94f7);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: #ff7e00;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2d94f7;
+}
+
+.advantages {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.advantages h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.advantages ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.advantages ul li {
+  font-size: 20px;
+}
+
+/* Страница программ */
+.programs {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.programs h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.program {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.program h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.program p {
+  font-size: 18px;
+}
+
+/* Страница преподавателей */
+.teachers {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.teachers h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.teacher {
+  height: 40vw;
+  background: #369dfe;
+  border-radius: 3vw;
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.teacher img {
+  margin-top: 1vw;
+  width: 95%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.teacher h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.teacher p {
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Страница отзывов */
+.reviews {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.reviews h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.review {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Страница контактов */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.contact h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact img {
+  width: 150px;
+
+}
+
+.contact strong {
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2d94f7;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .advantages ul {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .teacher {
+      width: 80%;
+      margin: 10px auto;
+  }
+
+  .program {
+      width: 80%;
+      margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 40px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+  .btn {
+      font-size: 16px;
+      padding: 8px 25px;
+  }
+
+  .advantages ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .teacher img {
+      width: 80%;
+  }
+
+  .teacher h2 {
+      font-size: 22px;
+  }
+
+  .review h2 {
+      font-size: 24px;
+  }
+}
+/* Заявка на пробный урок */
+
+   .trial f1 {
+    color: aquamarine;
+ }
+
+ /* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2d94f7;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus {
+  border-color: #2d94f7;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2d94f7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #2d94f7;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
